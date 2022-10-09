@@ -16,3 +16,15 @@ Based on the information given, break this ticket down into 2-5 individual ticke
 You will be graded on the level of detail in each ticket, the clarity of the execution plan within and between tickets, and the intelligibility of your language. You don't need to be a native English speaker, but please proof-read your work.
 
 ## Your Breakdown Here
+1- create a AgentOfFacility DB Model
+it should have id, agentId, facilityId,
+whenever an agent is worked for a facility, new entry should be added to AgentOfFacility with related agent and facility.
+crate a test case which creates agents, facilities and shifts and show AgentOfFacility model has correct entries. 
+
+2- create getShiftsByAgentOfFacility
+it should return Shifts by facilityId by giving custom agent id for each agent
+create a test case to prove getShiftsByFacility and getShiftsByAgentOfFacility results are having the same structure except agent id 
+
+3- create test generateReport with result of getShiftsByAgentOfFacility function
+it should return the same report with getShiftsByFacility expect custom agent id
+create a test case to prove two repors are the same except agent id 
